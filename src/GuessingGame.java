@@ -26,16 +26,18 @@ public class GuessingGame {
 			} else if (number < 7) {
 				System.out.println("Sorry too low!  Guess again!");		
 			}
+			numAttempts += 3;
 			
-			while (numAttempts <3) System.out.println();
+		} while (numAttempts <3);
+		
+		System.out.println("No more attempts, you are done!!");
 		
 					input.close();
-					
 		}
 		
 	}
 	
-}
+
 	
 	
 	/*  commented out
